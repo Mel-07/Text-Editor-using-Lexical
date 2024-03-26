@@ -1,0 +1,26 @@
+.scroll {
+  overflow-x: scroll;
+  background-color: #00000010;
+  scroll-behavior: smooth;
+}
+.scroll::-webkit-scrollbar {
+  height: 0.2rem;
+}
+.scroll:hover::-webkit-scrollbar {
+  height: 0.4rem;
+}
+.scroll::-webkit-scrollbar-track {
+  background-color: #bbbbbb01;
+}
+.scroll::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.115);
+  border: 1px solid #bbbbbb;
+  border-radius: 5px;
+}
+.scroll::-webkit-scrollbar-corner {
+  border-radius: 5px;
+}
+@media (width <= 1015px) {
+  .scroll {
+  }
+}
